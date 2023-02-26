@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /api/v1
+  port: 8085
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/music
+    username: postgres
+    password: postgres
+  sql:
+    init:
+      mode: EMBEDDED
+  output :
+    ansi:
+      enabled: always

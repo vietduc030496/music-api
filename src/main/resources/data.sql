@@ -1,0 +1,1 @@
+INSERT INTO sys_user (id, username, password) VALUES (1, 'demo', '$2a$12$NieGgiXGrPCfGM5V./s/1enKwcWR/djAwphOB8/QDZ3e5EHKKFqV6');
