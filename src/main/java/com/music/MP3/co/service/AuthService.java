@@ -1,6 +1,6 @@
 package com.music.MP3.co.service;
 
-import com.music.MP3.co.controller.config.security.jwt.JwtProvider;
+import com.music.MP3.co.config.security.jwt.JwtProvider;
 import com.music.MP3.co.constant.CommonConstants;
 import com.music.MP3.co.constant.MessageConstants;
 import com.music.MP3.co.domain.dto.request.login.LoginRequest;
@@ -31,8 +31,8 @@ public class AuthService {
     /**
      * Login system
      *
-     * @param request include user and password of user
-     * @return result and message of result login
+     * @param request include username and password of user
+     * @return result and message of result login. If username or password incorrect then login failed.
      */
     public BaseResponse login(LoginRequest request) {
 
@@ -59,8 +59,9 @@ public class AuthService {
     /**
      * Sign in new account for new user
      *
-     * @param request include new username and password of new user
-     * @return result and message of result signup
+     * @param request include new username, password and confirm password of new user.
+     * @return result and message of result signup.
+     *         If username is existed or password not equal confirm password then registration failed
      */
     public BaseResponse signup(SignupRequest request) {
 

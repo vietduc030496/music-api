@@ -1,4 +1,4 @@
-package com.music.MP3.co.controller.config.security.jwt;
+package com.music.MP3.co.config.security.jwt;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

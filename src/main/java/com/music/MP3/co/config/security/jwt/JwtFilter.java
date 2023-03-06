@@ -1,4 +1,4 @@
-package com.music.MP3.co.controller.config.security.jwt;
+package com.music.MP3.co.config.security.jwt;
 
 import com.music.MP3.co.constant.CommonConstants;
 import org.apache.commons.lang3.StringUtils;

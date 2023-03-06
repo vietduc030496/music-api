@@ -1,4 +1,4 @@
-package com.music.MP3.co.controller.config.security.jwt;
+package com.music.MP3.co.config.security.jwt;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -20,6 +20,12 @@ public class JwtProvider {
     @Value("$(jwt.secret)")
     private String jwtSecret;
 
+    /**
+     * Create new JWT have expired 15 days, use secret key define in file <p>secret.properties<p/>
+     *
+     * @param login username of user
+     * @return new jwt
+     */
     public String generateToken(String login) {
         Date date = Date.from(LocalDate.now().plusDays(15).atStartOfDay(ZoneId.systemDefault()).toInstant());
         return Jwts.builder()
@@ -29,6 +35,12 @@ public class JwtProvider {
                 .compact();
     }
 
+    /**
+     * Check jwt of user is correct.
+     *
+     * @param token jwt of user
+     * @return result
+     */
     public boolean isValidate(String token) {
 
         if (StringUtils.isEmpty(token)) {

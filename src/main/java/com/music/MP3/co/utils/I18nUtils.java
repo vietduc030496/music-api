@@ -1,6 +1,6 @@
 package com.music.MP3.co.utils;
 
-import com.music.MP3.co.controller.config.i18n.MessageComponent;
+import com.music.MP3.co.config.i18n.MessageComponent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,6 +9,9 @@ import java.util.Locale;
 @Component
 public class I18nUtils {
 
+    /**
+     * @see
+     */
     private static MessageComponent messageComponent;
 
     private static Locale defaultLocale = Locale.US;

@@ -1,4 +1,4 @@
-package com.music.MP3.co.controller.config.i18n;
+package com.music.MP3.co.config.i18n;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

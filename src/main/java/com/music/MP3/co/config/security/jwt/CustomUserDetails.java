@@ -1,4 +1,4 @@
-package com.music.MP3.co.controller.config.security.jwt;
+package com.music.MP3.co.config.security.jwt;
 
 import com.music.MP3.co.domain.model.User;
 import org.springframework.security.core.GrantedAuthority;

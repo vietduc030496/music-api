@@ -1,7 +1,7 @@
-package com.music.MP3.co.controller.config.security;
+package com.music.MP3.co.config.security;
 
-import com.music.MP3.co.controller.config.security.jwt.JwtAuthenticationEntryPoint;
-import com.music.MP3.co.controller.config.security.jwt.JwtFilter;
+import com.music.MP3.co.config.security.jwt.JwtFilter;
+import com.music.MP3.co.config.security.jwt.JwtAuthenticationEntryPoint;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
